@@ -1,0 +1,7 @@
+version: '3.1'
+services:
+  moneyaggvoc:
+    build: .
+    image: moneyaggvoc
+    ports:
+      - "8888:8888"

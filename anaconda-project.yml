@@ -1,0 +1,52 @@
+name: moneyaggvoc
+icon: null
+description: >-
+  Money Aggregate Vocabulary, or MoneyAggVoc for short, is an attempt to catalogue 
+  money aggregate measures listed in the Exhibit 3 Definitions of Money in 
+  Reading 19 on Economics of the CFA Program Curriculum 2016 Level I (ISBN 978-1-942471-19-6) 
+  with some minor additions. 
+  Although the CFA Program Curriculum inspired the structure of the information in this vocabulary, 
+  the actual content was taken from the open sources (DBpedia, Federal Reserve System, 
+  European Central Bank, Bank of Japan and Bank of England) and includes appropriate references.
+commands:
+  generate-config:
+    unix: envs/notebook/bin/jupyter notebook --generate-config
+    description: Generates notebook configuration, so that it can be tweaked
+    env_spec: notebook
+  register-kernel:
+    unix: envs/notebook/bin/python -m ipykernel install --user --name conda-env-notebook
+    description: Registers the environment as kernel so that we have access to libraries
+    env_spec: notebook
+  notebook:
+    notebook: moneyaggvoc.ipynb
+    description: Runs Jupyter Notebook with Money Aggregates Vocabulary locally
+    env_spec: notebook
+variables: {}
+services: {}
+downloads: {}
+packages:
+  - anaconda
+  - python=3.6
+  - rdflib=4.2.2
+  - pandas
+channels:
+  - conda-forge
+platforms:
+  - linux-64
+  - osx-64
+  - win-64
+env_specs:
+  default:
+    description: Default environment
+    packages: []
+    channels: []
+    platforms: []
+  notebook:
+    description: Jupyter notebooks environment
+    packages:
+      - ipykernel
+      - jupyter
+    channels:
+      - bioconda
+      - viascience
+    platforms: []
