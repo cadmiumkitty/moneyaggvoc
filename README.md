@@ -23,7 +23,7 @@ Preferred prefix when using the vocabulary is `mav`.
 
 ## Interesting questions
 
-Is "Money aggregate in the Eurozone" (http://semanticweblondon.com/moneyaggvoc#3) a `skos:Concept` or `skos:Collection`? 
+Is "Money aggregate in the Eurozone" (http://semanticweblondon.com/moneyaggvoc#mav003) a `skos:Concept` or `skos:Collection`? 
 I'd say it is a `skos:Concept`, since there is a corresponding EuroVoc concept (http://eurovoc.europa.eu/1825).
 
 Is European Central Bank (EBC) Broad Money (M3) a broader concept than Narrow Money (M1)?
