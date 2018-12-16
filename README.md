@@ -84,6 +84,6 @@ There are multiple visualization tools available for SKOS.
 
 ![TopBraid EDG MoneyAggVoc visualization](vis-topbraid-edg.png)
 
-[SKOS Play!]http://labs.sparna.fr/skos-play/) visualization would look like this.
+[SKOS Play!](http://labs.sparna.fr/skos-play/) visualization would look like this.
 
 ![SKOS Play! MoneyAggVoc visualization](vis-skos-play.png)
