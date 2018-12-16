@@ -8,7 +8,7 @@ Reading 19 on Economics of the CFA Program Curriculum 2016 Level I (ISBN 978-1-9
 with some minor additions. 
 
 Although the [CFA Program Curriculum](https://www.cfainstitute.org/) inspired the structure of the concepts in this vocabulary, 
-the actual content was taken from the open sources (DBpedia, Federal Reserve System, 
+the actual content was taken from open sources (DBpedia, Federal Reserve System, 
 European Central Bank, Bank of Japan and Bank of England) and includes appropriate references.
 
 Simple Knowledge Management System (SKOS) is used to express the vocabulary.
