@@ -7,7 +7,7 @@ money aggregate measures listed in the Exhibit 3 Definitions of Money in
 Reading 19 on Economics of the CFA Program Curriculum 2016 Level I (ISBN 978-1-942471-19-6) 
 with some minor additions. 
 
-Although the CFA Program Curriculum inspired the structure of the information in this vocabulary, 
+Although the [CFA Program Curriculum](https://www.cfainstitute.org/) inspired the structure of the concepts in this vocabulary, 
 the actual content was taken from the open sources (DBpedia, Federal Reserve System, 
 European Central Bank, Bank of Japan and Bank of England) and includes appropriate references.
 
@@ -23,8 +23,8 @@ Preferred prefix when using the vocabulary is `mav`.
 
 ## Interesting questions
 
-Is "Money aggregate in the Eurozone" (http://semanticweblondon.com/moneyaggvoc#3) a skos:Concept or skos:Collection? 
-I'd say it is a skos:Concept, since there is a corresponding EuroVoc concept (http://eurovoc.europa.eu/1825).
+Is "Money aggregate in the Eurozone" (http://semanticweblondon.com/moneyaggvoc#3) a `skos:Concept` or `skos:Collection`? 
+I'd say it is a `skos:Concept`, since there is a corresponding EuroVoc concept (http://eurovoc.europa.eu/1825).
 
 Is European Central Bank (EBC) Broad Money (M3) a broader concept than Narrow Money (M1)?
 I'd say no, they are all just measures of money supply. It would make sense to order them, but not create a hierarchy.
@@ -33,9 +33,9 @@ Is Narrow Money and Broad Money alternative labels or another level of concepts?
 I'd say they are alternative labels where definitions call them out in that way (for example ECB definitions of M1, M2 and M3), 
 even though in some cases narrow money sounds like a concept that includes multiple measures (for example Bank of England M0 and M2).
 
-Shall I be using dcterms:title and dcterms:description or rdfs:label and rdfs:comment for the Scheme?
-I went with rdfs:label and rdfs:comment to allow TopBraid and SKOS Play to work out of the box in a nice way, even though 
-[SKOS Primer](https://www.w3.org/TR/skos-primer/) suggests the use of dcterms:title and dcterms:description.
+Shall I be using `dcterms:title` and `dcterms:description` or `rdfs:label` and `rdfs:comment` for the Scheme?
+I went with `rdfs:label` and `rdfs:comment` to allow TopBraid and SKOS Play to work out of the box in a nice way, even though 
+[SKOS Primer](https://www.w3.org/TR/skos-primer/) suggests the use of `dcterms:title` and `dcterms:description`.
 
 Would calling it "moneyvoc" be too ambitious?
 Yes, it would be, in the end I'm only trying to describe the money supply concepts. MoneyAggVoc it is.
