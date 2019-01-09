@@ -1,0 +1,42 @@
+title: MoneyAggVoc
+description: >-
+  Money Aggregate Vocabulary, or MoneyAggVoc for short, is an attempt to catalogue 
+  money aggregate measures listed in the Exhibit 3 Definitions of Money in 
+  Reading 19 on Economics of the CFA Program Curriculum 2016 Level I with some minor additions. 
+baseurl: "/moneyaggvoc"
+url: "http://cadmiumkitty.github.io"
+twitter_username: eugenemorozov
+github_username:  cadmiumkitty
+linkedin_username: emorozov
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-rdf
+
+jekyll_rdf:
+  path: "moneyaggvoc.ttl"
+  restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), 'http://cadmiumkitty.github.io/moneyaggvoc/')  }"
+  class_template_mappings:
+      "http://www.w3.org/2004/02/skos/core#Concept": "concept.html"
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme": "concept_scheme.html"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .projectignore
+  - .ipynb_checkpoints
+  - envs
+  - anaconda-project.yml
+  - docker-compose.yml
+  - Dockerfile
+  - LICENSE
+  - moneyaggvoc.csv
+  - moneyaggvoc.ipynb
+  - README.md
+  - vis-skos-play.png
+  - vis-topbraid-edg.png
+  

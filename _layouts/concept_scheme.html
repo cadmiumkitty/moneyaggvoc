@@ -1,0 +1,21 @@
+---
+layout: default
+rdf_prefix_path: _data/prefixes.pref
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.rdf | rdf_property: 'rdfs:label' }}</h1>
+  </header>
+
+  <div class="post-content">
+
+    <p>{{ page.rdf | rdf_property: 'rdfs:comment' }}</p>
+
+    {% assign topconcepts = page.rdf | rdf_property: 'skos:hasTopConcept', nil, true %}
+    {% include concept_list.html header = 'Top concepts' list = topconcepts %}
+
+    {% include concept_tree.html header = 'Concepts' concepts = topconcepts %}
+
+  </div>
+
+</article>

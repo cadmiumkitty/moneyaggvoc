@@ -1,0 +1,7 @@
+{% assign broader = include.concept | rdf_property: 'skos:broader' %}
+{% if broader %}
+  {% include concept_breadcrumbs.html concept = broader %} / <a href="{{ site.url }}{{ site.baseurl }}{{ include.concept.render_path }}">{{ include.concept | rdf_property: 'skos:prefLabel' }}</a>
+{% else %}
+  {% assign hastopconcept = include.concept | rdf_inverse_property: 'skos:hasTopConcept', true | first %}
+  <a href="{{ site.url }}{{ site.baseurl }}{{ hastopconcept.render_path }}">{{ hastopconcept | rdf_property: 'rdfs:label' }}</a> / <a href="{{ site.url }}{{ site.baseurl }}{{ include.concept.render_path }}">{{ include.concept | rdf_property: 'skos:prefLabel' }}</a>
+{% endif %}    

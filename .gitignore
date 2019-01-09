@@ -103,3 +103,10 @@ venv.bak/
 ### JupyterNotebook ###
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata

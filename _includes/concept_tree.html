@@ -1,0 +1,12 @@
+{% if include.header %}
+<h1>{{ include.header }}</h1>
+{% endif %}
+{% if include.concepts.size > 0 %}
+  <ul>
+  {% for concept in include.concepts %}
+    <li><a href="{{ site.url }}{{ site.baseurl }}{{ concept.render_path }}">{{ concept | rdf_property: 'skos:prefLabel' }}</a></li>
+    {% assign narrower = concept | rdf_inverse_property: 'skos:broader', true %}
+    {% include concept_tree.html concepts = narrower %}
+  {% endfor %}
+  </ul>
+{% endif %}
