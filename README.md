@@ -16,14 +16,14 @@ Simple Knowledge Management System (SKOS) is used to express the vocabulary.
 Preferred prefix when using the vocabulary is `mav`.
 
 ```turtle
-@prefix mav: <http://semanticweblondon.com/moneyaggvoc#> .
+@prefix mav: <http://cadmiumkitty.github.io/moneyaggvoc/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 ```
 
 ## Interesting questions
 
-Is "Money aggregate in the Eurozone" (http://semanticweblondon.com/moneyaggvoc#mav003) a `skos:Concept` or `skos:Collection`? 
+Is "Money aggregate in the Eurozone" (http://cadmiumkitty.github.io/moneyaggvoc/#mav003) a `skos:Concept` or `skos:Collection`? 
 I'd say it is a `skos:Concept`, since there is a corresponding EuroVoc concept (http://eurovoc.europa.eu/1825).
 
 Is European Central Bank (EBC) Broad Money (M3) a broader concept than Narrow Money (M1)?
@@ -75,6 +75,10 @@ Log into Notebook (http://localhost:8888) and run `moneyaggvoc.ipynb`.
  * I really ought to rewrite my [rdfpandas](https://github.com/cadmiumkitty/rdfpandas) package as a Conda package.
  * There is an issue open for RdfLib calling for an [easy way to expand CURIE with NamespaceManager](https://github.com/RDFLib/rdflib/issues/626).
  * Add Ordered Turtle Serializer from (https://github.com/scriptotek/otsrdflib)
+
+## Rendering static site
+
+[MoneyAggVoc](http://cadmiumkitty.github.io/moneyaggvoc/) static website is rendered using [jekyll-rdf](https://github.com/white-gecko/jekyll-rdf). 
 
 ## Visualization
 
