@@ -196,7 +196,8 @@ mav:mav001 a skos:Concept ;
     dcterms:source <http://dbpedia.org/resource/Money_supply> ;
     skos:definition "In economics, the money supply or money stock, is the total amount of monetary assets available in an economy at a specific time. There are several ways to define \"money\", but standard measures usually include currency in circulation and demand deposits (depositors' easily accessed assets on the books of financial institutions)." ;
     skos:inScheme mav:scheme ;
-    skos:prefLabel "Money aggregate" .
+    skos:prefLabel "Money aggregate" ;
+    skos:topConceptOf mav:scheme .
 
 mav:scheme a skos:ConceptScheme ;
     rdfs:label "Money Aggregate Vocabulary" ;
