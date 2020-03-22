@@ -1,7 +1,15 @@
-version: '3.1'
+version: '3.7'
 services:
-  moneyaggvoc:
-    build: .
-    image: moneyaggvoc
+  notebook:
+    build: notebook
+    image: notebook
     ports:
       - "8888:8888"
+    volumes: 
+      - ./moneyaggvoc:/moneyaggvoc
+  jekyll:
+    build: jekyll
+    image: jekyll
+    volumes: 
+      - ./jekyll:/srv/jekyll
+      - ./moneyaggvoc:/srv/jekyll/moneyaggvoc

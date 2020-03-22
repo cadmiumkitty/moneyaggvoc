@@ -22,5 +22,5 @@ Jekyll site is rendered with [jekyll-rdf](https://github.com/white-gecko/jekyll-
 
 [MoneyAggVoc SKOS ConceptScheme](scheme.html)
 
-[MoneyAggVoc SKOS TTL File](moneyaggvoc.ttl)
+[MoneyAggVoc SKOS TTL File](moneyaggvoc/moneyaggvoc.ttl)
 

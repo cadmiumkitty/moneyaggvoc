@@ -42,30 +42,13 @@ Yes, it would be, in the end I'm only trying to describe the money supply concep
 
 ## Prerequisites
 
-You have to have Anaconda Project (https://anaconda-project.readthedocs.io/en/latest/), 
-Docker (https://docs.docker.com/) and Docker Compose (https://docs.docker.com/compose/) 
-installed as a starting point.
-
-All other dependencies are pulled by Anaconda Project and Docker.
+You need Docker (https://docs.docker.com/) and Docker Compose (https://docs.docker.com/compose/) 
+installed as a starting point. The rest of the build is done in the docker containers. All other dependencies are pulled by Anaconda Project, RubyGems and Docker.
 
 ## Generating Money Aggregate Vocabulary
 
-### Locally
-
 ```shell
-anaconda-project prepare --env-spec notebook
-anaconda-project run register-kernel
-anaconda-project run generate-config
-anaconda-project run notebook
-```
-
-Notebook at your localhost will open automatically in a new browser window. Run `moneyaggvoc.ipynb`.
-
-### In a docker container
-
-```shell
-docker-compose build
-docker-compose up
+docker-compose up -b
 ```
 
 Log into Notebook (http://localhost:8888) and run `moneyaggvoc.ipynb`.
@@ -78,7 +61,7 @@ Log into Notebook (http://localhost:8888) and run `moneyaggvoc.ipynb`.
 
 ## Rendering static site
 
-[MoneyAggVoc](http://cadmiumkitty.github.io/moneyaggvoc/) static website is rendered using [jekyll-rdf](https://github.com/white-gecko/jekyll-rdf). 
+[MoneyAggVoc](https://cadmiumkitty.github.io/moneyaggvoc/) static website is rendered using [jekyll-rdf](https://github.com/white-gecko/jekyll-rdf). 
 
 ## Visualization
 

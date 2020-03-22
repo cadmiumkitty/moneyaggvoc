@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix mav: <http://cadmiumkitty.github.io/moneyaggvoc/> .
+@prefix mav: <https://cadmiumkitty.github.io/moneyaggvoc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -177,7 +177,7 @@ mav:mav006 a skos:Concept ;
     skos:broader mav:mav001 ;
     skos:definition "The money supply is commonly defined to be a group of safe assets that households and businesses can use to make payments or to hold as short-term investments. For example, U.S. currency and balances held in checking accounts and savings accounts are included in many measures of the money supply." ;
     skos:inScheme mav:scheme ;
-    skos:prefLabel "Unites States money aggregate" .
+    skos:prefLabel "United States money aggregate" .
 
 mav:mav010 a skos:Concept ;
     dcterms:source <http://www.boj.or.jp/en/statistics/outline/exp/data/exms01.pdf> ;
