@@ -67,7 +67,7 @@ GEM
     json-ld-preloaded (3.1.2)
       json-ld (~> 3.1)
       rdf (~> 3.1)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
