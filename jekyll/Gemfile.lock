@@ -114,7 +114,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     multi_json (1.14.1)
     net-http-persistent (2.9.4)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pathutil (0.16.2)
